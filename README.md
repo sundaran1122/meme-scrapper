@@ -10,7 +10,7 @@ more hardcore reddit users in mind. it also does parellel downloads greatly impr
 # Usage
 the general format of the command is
 
-``
+```
 meme-scrapper <subreddit without r/> <number of posts to download>
 ```
 
