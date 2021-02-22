@@ -14,10 +14,7 @@ the general format of the command is
 meme-scrapper <subreddit without r/> <number of posts to download>
 ```
 
-first make a directory to store all your memes(eg. `~/Pictures/memes`) you should cd into this directory when you want to watch
-and manage memes.
-
-then make a directory with the name of the subreddit(eg memes,linuxmasterrace,linuxmemes,unixporn). now run the command. for now,
+then make a directory with the name of the subreddit(eg memes,linuxmasterrace,linuxmemes,unixporn) inside your $MEMES direcctory. now run the command from anywhere. for now,
 it takes the top hot posts, downloads them, and saves them in their subreddits folder. after this, you can view and manage them.
 
 # instalation
@@ -28,17 +25,7 @@ currently this is not in any standard repos or the AUR so you have to install it
 ``` bash
 git clone https://github.com/sundaran1122/meme-scrapper
 cd meme-scrapper
-cp meme-scrapper.zsh ~/.local/bin/meme-scrapper
-```
-if this doesn't work
-
-first make sure ~/.local/bin exists.
-
-if it still fails,
-
-add this to your shells rc file
-
-``` bash
-export PATH=$PATH:~/.local/bin
+./install.zsh
 ```
 
+the script will walk you through the installation.

@@ -1,6 +1,8 @@
-#!/bin/bash
+#!/bin/zsh
 
-curl -s -H "User-agent: memescraper 1.0" https://www.reddit.com/r/$1/hot.json?limit=$2 > meme.json
+cd $MEMES
+
+curl -s -H "User-agent: memescraper 1.0" https://www.reddit.com/r/$1/hot.json\?limit=$2 > meme.json
 cat meme.json | jq '.' > meme-clean.json
 rm meme.json
 
